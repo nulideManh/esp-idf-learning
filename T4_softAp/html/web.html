@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charshet="utf-8" />
+<h1>Nhập thông tin Wifi</h1>
+
+<form action="/action_page.php">
+  <label for="fname">SSID:</label>
+  <input type="text" id="ssid" name="fname"><br><br>
+  <label for="lname">PASS:</label>
+  <input type="text" id="pass" name="lname"><br><br>
+</form>
+
+<button type="button" onclick= "myFunction()">SEND!</button>
+
+<script>
+
+var xhttp1 = new XMLHttpRequest();
+
+function myFunction() {
+  var ssid = document.getElementById("ssid").value;
+  var pass = document.getElementById("pass").value;
+  var data = ssid + '/' + pass;
+
+  setTimeout(function() {
+    xhttp1.open("POST", "/wifiInfo", true);
+    xhttp1.send(data);
+  }, 100);
+
+}
+
+</script>
+</body>
+</html>

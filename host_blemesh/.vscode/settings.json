@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "app_assert_config.h": "c",
+        "app_assert.h": "c",
+        "app_uart.h": "c",
+        "stdio.h": "c",
+        "sl_status_string_config.h": "c",
+        "sl_string.h": "c",
+        "system.h": "c",
+        "btmesh_conf.h": "c",
+        "app_log.h": "c",
+        "app_log_config.h": "c",
+        "sl_iostream_handles.h": "c",
+        "sl_iostream.h": "c",
+        "sl_slist.h": "c",
+        "em_assert.h": "c",
+        "sl_btmesh_lighting_client.h": "c",
+        "sl_btmesh_lib.h": "c"
+    }
+}
